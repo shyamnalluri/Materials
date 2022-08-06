@@ -1,0 +1,80 @@
+Configure Git
+
+To Quit use ( :q )
+to clear screen ( clear )
+git help <Command>
+git <command> --help
+
+- git config --global -e (See Info and to edit)
+- git config --list ( Check Configuration details )
+- git config --global user.name "Username" ( To link user name )
+- git config --global user.email "Email" ( To add email account linked to git )
+
+Set Notepad++ as a default editor
+
+To set path copy notepad++ location and add it to path in environmental variables
+Restart Git Bash 
+
+-notepad++ create_new_file ( To create file using Git in notepad++)
+-Create shortcut name for notepad++
+--notepad++ .bash_profile (create file if not present)
+--alias npp='notepad++.exe -multiInst -nosession' (add this line to file)
+
+Make Notepad++ as default editor
+
+-git config --global core.editor 'notepad++.exe -multiInst -nosession'
+
+Clone project 
+cd G: (change directory where you want to download folder)
+-git clone <URL>
+- work on the project make any changes
+--git status (to check status)
+- git add <filename>
+--git commit -m <"comments if any"> (to save code in local repository)
+--git push origin main (to push code to github)
+-- git pull origin main (to pull code from github)
+
+Cloning Conig
+
+-- git clone <url> <your preferred name>
+
+Creating Repository and adding file
+
+--Git init (to initialise the git)
+--git status
+--git add . (to add all files)
+--git commit
+--git remote add origin <url> (To start communication with repository)
+--git push -u origin master(To push files to github from localsystem)
+
+Create/delete/pull branch
+--git checkout -b " <branch name > // To create new branch
+--git checkout <branch name> // To change branch
+--git branch -D <branch-name> // To delete force delete branch
+--git push --delete <remote name> <branch name> // To delete branch in remote repository
+--git clone -b <branchname> <remote-repo-url> // To clone only specific branch from remote repo but this command will also pull other branches
+--git clone -b <branchname> --single-branch <Repo URL> // To clone only specific branch from remote repo
+Lifecycle
+
+-untracked
+--tracked
+---unmodified
+---modified
+---staged
+
+git ignore
+
+To ignore files which you don't want to show up in git
+create new file named as .gitignore in project folder
+then add the file name which you don't want use following command
+--(filename.txt)
+to add all similar format files 
+-- (*.txt)
+to add folder 
+--(foldername/)
+from 10 files if you don't want one file to be ignored then use this command
+-- !filename.txt
+
+git log
+git log --oneline --graph --decorate
+

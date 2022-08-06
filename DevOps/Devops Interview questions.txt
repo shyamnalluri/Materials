@@ -1,0 +1,34 @@
+Devops Engineer Responsibility
+
+1. Create code repository for the developer 
+2. Create branches according to the copmanies set strategies
+2. Maintain Code Repository and provide branch access to the particular developers
+
+What is Release Branch?
+
+A. A stable branch which is ready to deploy to the customer
+
+what is merge conflict?
+
+On which port ssh works?
+ans Port 22
+
+What is HTTP/Https?
+what are application layer /Layes 7 protocols?
+Ans https/Tcp
+
+SSh - 22
+Ftp - 24
+Https - 443
+Http - 80
+
+What are the ssl configuration and what essential things you need to have to encrypt the data?
+Ans Data,A unique encryption key, An encryption algorithm
+
+What are the advantages of microservices?
+1. Modularity - Maintaining the source code respect to the features (ex,search service,category service)
+2. Reducing the infracture cost
+3. Continuous feature flex
+
+What is docker"
+

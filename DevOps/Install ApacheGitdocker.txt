@@ -1,0 +1,16 @@
+Instance User Data to install docker/git/apache
+==============================================
+
+#! /bin/bash
+
+yum update -y--------------------------------------------------#To update system with new updates
+
+amazon-linux-extras install docker-----------------------------# To install docker
+service docker start-------------------------------------------# To start docker
+usermod -a -G docker ec2-user ---------------------------------# To create user 
+
+yum install -y httpd.x86_64 -----------------------------------# To install Apache Server
+systemctl start httpd.service ---------------------------------# To start Apache server
+systemctl enable httpd.service --------------------------------# To Enable server
+echo 'Hello World $(hostname --long)'> /var/www/html/index.html-- # To print output
+==================================================================================================

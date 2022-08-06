@@ -1,0 +1,26 @@
+To change deamon or from linkux to windows and vice-versa 
+"C:\Program Files\Docker\Docker\DockerCli.exe" -SwitchDaemon
+
+docker build -t sock-shop-frontend . //t is tags 
+docker run  -p 8079:8079 -t sock-shop-frontend:latest
+https://+github.com/microservices-demo/front-end.git
+
+docker ps (TO know the running containers)
+docker logs -f (container id ffgdhdybd)
+docker stop (container id) to stop container (we can start it again)
+docker kill (container id) to kill container (we cannot start again it gets killed)
+docker port "name" gives the port number on which docker is running
+
+npm start (To start the server)
+
+To run basic static website prakhar1989/static-site (https://docker-curriculum.com/)
+https://examples.javacodegeeks.com/devops/docker/docker-hello-world-example/
+
+
+To create docker image for docker hub, download image from docker hub and run the image in local system
+
+docker tag hello-java:latest shyamnalluri96/hello-java:v1
+docker push shyamnaluri96/hell0-java:v1
+docker pull shyamnalluri96/hello-world:v1
+docker run -p 8080:8080 shyamnalluri96/hello-world:v1
+docker run -p 9000:8080 shyamnalluri96/hello-world:v2
